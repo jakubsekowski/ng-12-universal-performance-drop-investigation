@@ -10,6 +10,7 @@
     "dev:ssr": "ng run angular-io-example:serve-ssr",
     "serve:ssr": "node dist/angular-io-example/server/main.js",
     "build:ssr": "ng build && ng run angular-io-example:server",
+    "build-and-run": "npm run build:ssr && npm run serve:ssr",
     "prerender": "ng run angular-io-example:prerender"
   },
   "private": true,
