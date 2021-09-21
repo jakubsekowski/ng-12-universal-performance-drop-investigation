@@ -11,7 +11,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { MessagesComponent } from './messages/messages.component';
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
@@ -30,12 +29,7 @@ import { isPlatformBrowser } from '@angular/common';
       dataEncapsulation: false,
     }),
   ],
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    MessagesComponent,
-    HeroSearchComponent,
-  ],
+  declarations: [AppComponent, DashboardComponent, HeroSearchComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {
