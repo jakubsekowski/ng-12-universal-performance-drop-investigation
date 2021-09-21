@@ -6,6 +6,10 @@
     "angular.io-example": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": true,
+          "inlineStyle": true
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -87,13 +91,6 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
           }
         },
         "server": {
