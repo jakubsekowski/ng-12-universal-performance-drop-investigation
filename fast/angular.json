@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-io-example": {
+    "angular.io-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,18 +21,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-io-example/browser",
+            "outputPath": "dist/angular.io-example/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -72,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-io-example:build:production"
+              "browserTarget": "angular.io-example:build:production"
             },
             "development": {
-              "browserTarget": "angular-io-example:build:development"
+              "browserTarget": "angular.io-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-io-example:build"
+            "browserTarget": "angular.io-example:build"
           }
         },
         "test": {
@@ -93,20 +88,15 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-io-example/server",
+            "outputPath": "dist/angular.io-example/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -132,12 +122,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angular-io-example:build:development",
-              "serverTarget": "angular-io-example:server:development"
+              "browserTarget": "angular.io-example:build:development",
+              "serverTarget": "angular.io-example:server:development"
             },
             "production": {
-              "browserTarget": "angular-io-example:build:production",
-              "serverTarget": "angular-io-example:server:production"
+              "browserTarget": "angular.io-example:build:production",
+              "serverTarget": "angular.io-example:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -145,18 +135,16 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "routes": [
-              "/"
-            ]
+            "routes": ["/"]
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-io-example:build:production",
-              "serverTarget": "angular-io-example:server:production"
+              "browserTarget": "angular.io-example:build:production",
+              "serverTarget": "angular.io-example:server:production"
             },
             "development": {
-              "browserTarget": "angular-io-example:build:development",
-              "serverTarget": "angular-io-example:server:development"
+              "browserTarget": "angular.io-example:build:development",
+              "serverTarget": "angular.io-example:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -164,5 +152,5 @@
       }
     }
   },
-  "defaultProject": "angular-io-example"
+  "defaultProject": "angular.io-example"
 }

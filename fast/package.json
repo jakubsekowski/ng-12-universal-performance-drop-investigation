@@ -1,5 +1,5 @@
 {
-  "name": "angular-io-example",
+  "name": "angular.io-example",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,11 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run angular-io-example:serve-ssr",
-    "serve:ssr": "node dist/angular-io-example/server/main.js",
-    "build:ssr": "ng build && ng run angular-io-example:server",
+    "dev:ssr": "ng run angular.io-example:serve-ssr",
+    "serve:ssr": "node dist/angular.io-example/server/main.js",
+    "build:ssr": "ng build && ng run angular.io-example:server",
     "build-and-run": "npm run build:ssr && npm run serve:ssr",
-    "prerender": "ng run angular-io-example:prerender"
+    "prerender": "ng run angular.io-example:prerender"
   },
   "private": true,
   "dependencies": {
